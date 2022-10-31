@@ -16,10 +16,8 @@ class Result {
         // Write your code here
 
         String str = "";
-        for(int i = 0; i < n; i++){
-            str += " ";
-        }
-
+        for(int i = 0; i < n; i++) str += " ";
+        
         StringBuilder sb = new StringBuilder(str);
 
         for(int i = 0; i < n; i++){
