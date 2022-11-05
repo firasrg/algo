@@ -5,23 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ae51c16-9410-4f5e-8614-049d202743ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/VisparusDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/algos/numbers/BigDecimalDivision.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/algos/numbers/ClosestNumberToZeroDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/algos/numbers/MinimumClosestNumbersDiffTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/algos/search/LinearSearchDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/algos/sort/SortingExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/algos/strings/AnagramCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/algos/strings/Stairs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/algos/strings/isAnagram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/technicalTest/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/algos/indexOf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/algos/search/BinarySearchDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exception/ExceptionDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,13 +48,13 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.org.example.technicalTest.Main">
-    <configuration name="ClosestNumberToZeroDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.algos.numbers.ClosestNumberToZeroDemo" />
+  <component name="RunManager" selected="Application.BinarySearchDemo">
+    <configuration name="BinarySearchDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.algos.search.BinarySearchDemo" />
       <module name="algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.algos.numbers.*" />
+          <option name="PATTERN" value="org.example.algos.search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,12 +62,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.algos.numbers.MinimumClosestNumbersDiffTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.algos.numbers.MinimumClosestNumbersDiffTest" />
+    <configuration name="ExceptionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.exception.ExceptionDemo" />
       <module name="algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.algos.numbers.*" />
+          <option name="PATTERN" value="org.example.exception.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="indexOf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.algos.indexOf" />
+      <module name="algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.algos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,19 +94,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.algos.search.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="org.example.algos.strings.TestExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.algos.strings.TestExample" />
-      <module name="algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.algos.strings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinarySearchDemo" />
+        <item itemvalue="Application.ExceptionDemo" />
+        <item itemvalue="Application.indexOf" />
         <item itemvalue="Application.org.example.technicalTest.Main" />
         <item itemvalue="Application.org.example.algos.search.LinearSearchDemo" />
-        <item itemvalue="Application.org.example.algos.strings.TestExample" />
-        <item itemvalue="Application.org.example.algos.numbers.MinimumClosestNumbersDiffTest" />
-        <item itemvalue="Application.ClosestNumberToZeroDemo" />
       </list>
     </recent_temporary>
   </component>
