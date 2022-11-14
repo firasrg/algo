@@ -2,6 +2,7 @@ package org.example.algos.dateTime;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 
 public class TimeConverter {
 
@@ -10,15 +11,18 @@ public class TimeConverter {
      * @param s
      * @return
      */
-    public static String timeConversion(String s) {
-        
-        DateTimeFormatter f = DateTimeFormatter.ofPattern("hh:mm:ssa");
-        LocalTime localTime = LocalTime.parse(s,f);
-        
-        String result = localTime.format(DateTimeFormatter.ISO_LOCAL_TIME);
-        
-        return result;
-    }
+public static String timeConversion(String s) {
+    
+    StringBuilder sb = new StringBuilder(s);
+    
+    DateTimeFormatter f = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
+    
+    LocalTime localTime = LocalTime.parse(s,f);
+    
+    String result = localTime.format(DateTimeFormatter.ISO_LOCAL_TIME);
+    
+    return result;
+}
 
     public static void main(String[] args) {
        

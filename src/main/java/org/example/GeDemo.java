@@ -1,11 +1,9 @@
 package org.example;
 
-import java.util.Collections;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class VisparusDemo {
+public class GeDemo {
 
 
     private static void demo() {
@@ -30,10 +28,10 @@ public class VisparusDemo {
 
         int n = 120;
 
-        final String FIZZ = "fizz";
-        final String BUZZ = "buzz";
-        final String BARK = "Bark";
-        final String TREE = "Tree";
+        final String IGA = "Iga";
+        final String TUNISIE = "Tunisie";
+        final String YEAR_2022 = "2022";
+//        final String TREE = "Tree";
 //        final String FIZZ_BUZZ = FIZZ + BUZZ;
 //        final String FIZZ_BARK = FIZZ + BARK;
 //        final String BUZZ_BARK = BUZZ + BARK;
@@ -41,10 +39,10 @@ public class VisparusDemo {
 
         // other consts
         final Map<Integer,String> tree = new TreeMap<>();
-        tree.put(3, FIZZ);
-        tree.put(5, BUZZ);
-        tree.put(7, BARK);
-        tree.put(13, TREE);
+        tree.put(3, IGA);
+        tree.put(5, TUNISIE);
+        tree.put(7, YEAR_2022);
+//        tree.put(13, TREE);
 
         for (int i = 1 ; i <= n ; i++) {
 

@@ -7,22 +7,22 @@ import java.util.Scanner;
 public class ClosestNumberToZeroDemo {
 
 
-    public static void computeClosestToZero(int[] data) {
+    public static void computeClosestToZero(int[] arr) {
 
         int current = 0;
-        int near = data[0];
+        int close = arr[0];
 
-        Arrays.sort(data);
+        Arrays.sort(arr);
 
-        for ( int i = 0 ; i < data.length; i++ ){
+        for ( int i = 0 ; i < arr.length; i++ ){
 
-            current = data[i] * data[i];
-            if ( current <= (near * near) )  {
-                near = data[i];
+            current = arr[i] * arr[i];
+            if ( current <= (close * close) )  {
+                close = arr[i];
             }
         }
 
-        System.out.println(near);
+        System.out.println(close);
     }
 
     public static void main(String args[]) {
