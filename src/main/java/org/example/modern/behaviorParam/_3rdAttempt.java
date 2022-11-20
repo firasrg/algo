@@ -1,15 +1,15 @@
-package org.example.modern.oldway;
+package org.example.modern.behaviorParam;
 
 import org.example.modern.Apple;
-import org.example.modern.Color;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class _2ndAttempt {
+public class _3rdAttempt {
 
     /**
-     * Filter stock on color entry
+     * Filter stock based on size
+     * 
      * @param args
      */
     public static void main(String[] args) {
@@ -18,13 +18,11 @@ public class _2ndAttempt {
 
         System.out.println("stock has: " + Apple.stock.toString());
 
-        List<Apple> filteredGreen = filterByColor(stock, Color.GREEN);
-        List<Apple> filteredRed = filterByColor(stock, Color.RED);
+        List<Apple> filteredOnWeight = filterByWeight(stock, 150);
 
         System.out.println("****************");
 
-        System.out.println("green apples are : " + filteredGreen);
-        System.out.println("red apples are : " + filteredRed);
+        System.out.println("filtered apples are : " + filteredOnWeight);
 
     }
 
@@ -34,13 +32,12 @@ public class _2ndAttempt {
      * @param stock
      * @return
      */
-    static List<Apple> filterByColor(List<Apple> stock, Color c) {
+    static List<Apple> filterByWeight(List<Apple> stock, int weight) {
 
         List<Apple> result = new ArrayList<>();
 
         for(Apple a: stock){
-
-            if(c.equals(a.getColor()))
+            if(weight <= a.getWeight())
                 result.add(a);
         }
 

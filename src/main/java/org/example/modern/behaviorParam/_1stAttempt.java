@@ -1,4 +1,4 @@
-package org.example.modern.oldway;
+package org.example.modern.behaviorParam;
 
 import org.example.modern.Apple;
 import org.example.modern.Color;

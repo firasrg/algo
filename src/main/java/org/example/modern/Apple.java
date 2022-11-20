@@ -2,7 +2,6 @@ package org.example.modern;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.ToString;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,16 +17,18 @@ public class Apple {
     
     // filling the stock with static data
     static {
+
+        Random r = new Random();
         for (int i = 0; i < 5; i++) {
             // random color
-            int randomColorIndex = new Random().nextInt(Color.values().length);
+            int randomColorIndex = r.nextInt(Color.values().length);
             Color color = Color.values()[randomColorIndex];
             
             // random size
-            int min = 80;
+            int min = 150;
             int max = 300;
             
-            int size = new Random().nextInt((max + 1) - min) + min;
+            int size =  r.nextInt((max + 1) - min) + min;
             
             stock.add(new Apple(color, size));
         }
